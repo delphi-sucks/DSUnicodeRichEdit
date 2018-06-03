@@ -29,7 +29,7 @@ end;
 
 procedure Register;
 begin
-   RegisterComponents('Delphi-Sucks | Unicode', [TDSUnicodeRichEdit]);
+   RegisterComponents('Delphi-Sucks - Unicode', [TDSUnicodeRichEdit]);
 end;
 
 end.
