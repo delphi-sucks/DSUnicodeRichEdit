@@ -9,33 +9,34 @@ package DSUnicodeRichedit;
 {$EXTENDEDSYNTAX ON}
 {$IMPORTEDDATA ON}
 {$IOCHECKS ON}
-{$LOCALSYMBOLS ON}
+{$LOCALSYMBOLS OFF}
 {$LONGSTRINGS ON}
 {$OPENSTRINGS ON}
-{$OPTIMIZATION OFF}
+{$OPTIMIZATION ON}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
-{$REFERENCEINFO ON}
+{$REFERENCEINFO OFF}
 {$SAFEDIVIDE OFF}
-{$STACKFRAMES ON}
+{$STACKFRAMES OFF}
 {$TYPEDADDRESS OFF}
 {$VARSTRINGCHECKS ON}
 {$WRITEABLECONST OFF}
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
-{$DEFINE DEBUG}
+{$DEFINE RELEASE}
 {$ENDIF IMPLICITBUILDING}
-{$IMPLICITBUILD ON}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
 
 requires
-  rtl,
   vcl,
+  rtl,
   dbrtl,
   vcldb;
 
 contains
-  DS.Vcl.UnicodeRichEdit in 'DS.Vcl.UnicodeRichEdit.pas',
   DS.UnicodeRichEdit in 'DS.UnicodeRichEdit.pas',
+  DS.Vcl.UnicodeRichEdit in 'DS.Vcl.UnicodeRichEdit.pas',
   DS.Vcl.UnicodeDBRichEdit in 'DS.Vcl.UnicodeDBRichEdit.pas';
 
 end.
